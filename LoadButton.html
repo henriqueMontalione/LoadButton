@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+		<script>
+			$(document).ready(function(){
+
+				$('#btn').click(function(){		  
+				  $('#ico').addClass('fa fa-refresh fa-spin');
+				  
+				  //$('.load').addClass('loading');
+					setTimeout(function () { 
+						$('#ico').removeClass('fa fa-refresh fa-spin');
+					}, 2000);
+				});
+			});
+
+		</script>
+
+		<style>	
+			.buttonload {
+				background-color: #4CAF50; /* Green background */
+				border: none; /* Remove borders */
+				color: white; /* White text */
+				padding: 12px 24px;  Some padding */
+				font-size: 16px; /* Set a font-size */
+				width: 103px;
+			}
+			
+			.fa {
+				margin-left: -12px;
+				margin-right: 8px;
+			}		
+		</style>
+		
+	<head>
+	<body>
+			
+		<button id="btn" class="buttonload">
+		  <i id="ico"></i>Button
+		</button>	
+	
+	</body>
+	
+</html>	
